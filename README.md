@@ -42,9 +42,16 @@ gcc gcc lex.yy.c calc.tab.c -o calc
 
 ## learm 1
 
-足し算ができます。
+足し算だけができる言語です
 /1 ディレクトリに入れています
 
-`./calc` した後に 1 + 2 とか打ってみてください。
+以下のように動かすことができます
 
-足し算じゃないと syntax error が出る気がします
+```
+kyama@Nyanko-Book-Pro learm % cd 1
+kyama@Nyanko-Book-Pro 1 % ./calc
+1 + 2
+3
+```
+
+足し算じゃないと syntax error が出ます
