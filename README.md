@@ -45,5 +45,6 @@ gcc gcc lex.yy.c calc.tab.c -o calc
 足し算ができます。
 /1 ディレクトリに入れています
 
-1 + 2 とか打ってみてください。
-それ以外だと syntax error が出ます。
+`./calc` した後に 1 + 2 とか打ってみてください。
+
+足し算じゃないと syntax error が出る気がします
