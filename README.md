@@ -5,18 +5,35 @@
 
 プログラミング言語の自作について学習します
 
+## learm 1
+
+足し算だけができる言語です
+/1 ディレクトリに入れています
+
+以下のように動かすことができます
+
+```
+kyama@Nyanko-Book-Pro learm % cd 1
+kyama@Nyanko-Book-Pro 1 % ./calc
+1 + 2
+3
+```
+
+足し算じゃないと syntax error が出る、、、ことがあります
+
 
 ## 環境構築
 
-（コンパイルしてみる場合のみ必要）
-flex と bison を使います
+手元でコンパイルしたい場合はこの手順を実行してください。
+
+コンパイルには flex と bison を使います。
 
 flex と bison のインストール
 ```
 brew install flex bison
 ```
 
-以上
+以上。
 
 ## 実行
 
@@ -41,18 +58,3 @@ gcc gcc lex.yy.c calc.tab.c -o calc
 ```
 
 
-## learm 1
-
-足し算だけができる言語です
-/1 ディレクトリに入れています
-
-以下のように動かすことができます
-
-```
-kyama@Nyanko-Book-Pro learm % cd 1
-kyama@Nyanko-Book-Pro 1 % ./calc
-1 + 2
-3
-```
-
-足し算じゃないと syntax error が出る、、、ことがあります
