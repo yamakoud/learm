@@ -444,7 +444,7 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "calc.l"
 #line 2 "calc.l"
-#include "calc.tab.h"
+#include "calc.tab.h" // yacc で生成されるファイルを読み込む
 #line 448 "lex.yy.c"
 #line 449 "lex.yy.c"
 
@@ -726,23 +726,23 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 9 "calc.l"
-{ yylval = atoi(yytext); return NUMBER; }
+{ yylval = atoi(yytext); return NUMBER; } // 数字を読み込んだら、その値をyylvalにセットしてNUMBERを返す
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
 #line 10 "calc.l"
-{ return PLUS; }
+{ return PLUS; } // +を読み込んだら、PLUSを返す。これは '+' が足し算であることを示すための記述
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
 #line 11 "calc.l"
-{ return EOL; }
+{ return EOL; } // 行末に来たら、EOLを返す。EOLは行末を示すための記述
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 12 "calc.l"
-{ /* 無視する文字 */ }
+{ /* 無視する文字。ピリオドなので、改行以外のすべての文字を無視する */ }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
