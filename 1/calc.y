@@ -13,12 +13,12 @@ calculation:
   | calculation line
   ;
 
-line: 
+line:
   NUMBER { printf("%d\n", $1); }
   | expr EOL { printf("%d\n", $1); }
   ;
 
-expr: 
+expr:
   NUMBER { $$ = $1; }
   | expr PLUS NUMBER { $$ = $1 + $3; }
   ;
