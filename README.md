@@ -20,5 +20,3 @@ kyama@Nyanko-Book-Pro 1 % ./calc
 3
 ```
 
-足し算じゃないと syntax error が出る、、、ことがあります
-
