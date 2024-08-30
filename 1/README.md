@@ -79,3 +79,9 @@ flex calc.l
 bison -d calc.y
 gcc gcc lex.yy.c calc.tab.c -o calc
 ```
+
+実行
+
+```
+calc
+```
